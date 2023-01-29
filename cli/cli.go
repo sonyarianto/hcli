@@ -237,6 +237,30 @@ func DetectAvailableCli() {
 		defer wg.Done()
 		DetectCli("pnpm", "pnpm --version", `(\d+\.\d+\.\d+)`)
 	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("PowerShell Core", "pwsh --version", `(\d+\.\d+\.\d+)`)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("Windows PowerShell", "'{0}.{1}.{2}' -f $PSVersionTable.PSVersion.Major, $PSVersionTable.PSVersion.Minor, $PSVersionTable.PSVersion.Build", `(\d+\.\d+\.\d+)`)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("nvm", "nvm --version", `(\d+\.\d+\.\d+)`)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("Homebrew", "brew --version", `(\d+\.\d+\.\d+)`)
+	}()
 	
 	wg.Wait()
 }
