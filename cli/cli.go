@@ -261,6 +261,12 @@ func DetectAvailableCli() {
 		defer wg.Done()
 		DetectCli("Homebrew", "brew --version", `(\d+\.\d+\.\d+)`)
 	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("Windows Package Manager", "winget --version", `(\d+\.\d+\.\d+)`)
+	}()
 	
 	wg.Wait()
 }
