@@ -267,6 +267,18 @@ func DetectAvailableCli() {
 		defer wg.Done()
 		DetectCli("Windows Package Manager", "winget --version", `(\d+\.\d+\.\d+)`)
 	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("Chocolatey", "choco --version", `(\d+\.\d+\.\d+)`)
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		DetectCli("Visual Studio Code", "code --version", `(\d+\.\d+\.\d+)`)
+	}()
 	
 	wg.Wait()
 }
