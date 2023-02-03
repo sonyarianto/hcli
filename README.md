@@ -1,8 +1,5 @@
 # hcli
-Handy CLI
-
-## What is this?
-It's just a command line called `hcli` and it will display all available popular application on your system with its version. For example if you have Git, Node, npm and PHP installed on your system, this `hcli` will display the installed version.
+Handy CLI, small program to detect availability of popular app on your system e.g. Git, Node, npm etc and display its version.
 
 ## Sample output
 
