@@ -13,3 +13,9 @@ It's just a command line called `hcli` and it will display all available popular
 ## How to build
 
 - Run with `go build hcli.go` (or you can set the target output directory with `-o` flag)
+
+## License
+
+MIT
+
+Copyright (c) 2023-present, Sony Arianto Kurniawan and contributors
