@@ -3,7 +3,7 @@ Handy CLI, small program to detect availability of popular app on your system e.
 
 ## Sample output
 
-![My image](https://github.com/radicalcircle/hcli/blob/main/hcli.png?raw=true)
+![My image](https://github.com/radicalcircle/hcli/blob/main/hcli.png?raw=true?123)
 
 ## How to run
 
