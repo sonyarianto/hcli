@@ -10,7 +10,7 @@ const (
 	version   = "0.1.0"
 	author    = "Sony AK <sony@sony-ak.com>"
 	shortName = "hcli"
-	longName  = "Handly CLI"
+	longName  = "Handy CLI"
 )
 
 func main() {
