@@ -1,5 +1,5 @@
 # hcli
-Handy CLI, small program to detect availability of popular app on your system e.g. Git, Node, npm etc and display its version.
+HandyCLI, small program to detect availability of popular app on your system e.g. Git, Node, npm etc and display its version.
 
 ## Sample output
 
