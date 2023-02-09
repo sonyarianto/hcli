@@ -19,4 +19,4 @@ HandyCLI, small program to detect availability of popular app on your system e.g
 
 MIT
 
-Copyright (c) 2023-present, Sony Arianto Kurniawan and contributors
+Copyright (c) 2023-present, Sony Arianto Kurniawan <<sony@sony-ak.com>> and contributors.
